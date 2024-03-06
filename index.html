@@ -86,9 +86,6 @@
           <a class="navbar-item" href="https://promptpg.github.io/">
             PromptPG
           </a>
-          <a class="navbar-item" href="https://arxiv.org/abs/2307.10635">
-            SciBench
-          </a>
           <a class="navbar-item" href="https://arxiv.org/abs/2305.12524">
             TheoremQA
           </a>
@@ -270,7 +267,7 @@
     
     <div class="columns is-centered">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3" id="leaderboard">Leaderboard on textbook dataset</h2>
+        <h2 class="title is-3" id="leaderboard">Experimental Results Leaderboard on Textbook Dataset</h2>
         <div class="content">
           <!-- <p class="mt-3">Accuracy scores on the <b>testmini</b> subset (1,000 examples) of <img src="static/images/scibench.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
             <span class="scibench">SciBench</span>.
@@ -384,12 +381,7 @@
           <span class="scibench">SciBench</span></p>
 
         <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/examples/Early_Transcedentals.png" alt="arithmetic reasoning" width="60%"/>
-              <p>An example from the textbook <i>Calculus: Early Transcedentals</i></p>
-            </div>
-          </div>
+          
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/examples/fund.png" alt="fund textbook" width="60%"/>
@@ -408,8 +400,50 @@
               <p>class textbook</p>
             </div>
           </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/quan.png" alt="quan textbook" width="60%"/>
+              <p>quan textbook</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/chemmc.png" alt="chemmc textbook" width="60%"/>
+              <p>chemmc textbook</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/atkins.png" alt="atkins textbook" width="60%"/>
+              <p>atkins textbook</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/matter.png" alt="matter textbook" width="60%"/>
+              <p>matter textbook</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/calc.png" alt="calc textbook" width="60%"/>
+              <p>calc textbook</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/stat.png" alt="stat textbook" width="60%"/>
+              <p>stat textbook</p>
+            </div>
+          </div>
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/examples/diff.png" alt="diff textbook" width="60%"/>
+              <p>diff textbook</p>
+            </div>
+          </div>
         </div>
-        <p>One example for each <b>visual context</b> type required in <img src="static/images/scibench.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+        <p>One example for each <b>visual context</b> type required in
           <span class="scibench">SciBench</span></p>
 
        
@@ -418,66 +452,6 @@
   </div>
 </section>
 
-<!-- RESULTS SECTION -->
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-    <h1 class="title is-1 scibench">Experiment Results</h1>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Results on Existing Foundation Models</h2>
-        <!-- <p>One example for each reasoning skill required in <span class="scibench">SciBench</span></p> -->
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/score_leaderboard_gpt4v.png" alt="grade-lv" width="60%"/>
-              <p>Accuracy scores of primary baselines on the testmini subset (1,000 examples) of <img src="static/images/scibench.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-                <span class="scibench">SciBench</span>. 
-                <br>
-                Both CoT GPT-4 and PoT GPT-4 are augmented with Bard captions and OCR text.</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/bard_error.png" alt="grade-lv" width="70%"/>
-              <p>
-                Error analysis of Bard results: (a) presents errors in answers and explanations; <br>
-                (b) delves into the details of wrong explanations. <br>
-                Notations: “Answer” is “Ans.”, “Explanation” is “Exp.”, “Partially Correct” is “Partial”, <br>
-                and “Not applicable” refers to unanswerable or indeterminate cases.</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/grade-lv.png" alt="grade-lv" width="90%"/>
-              <p>Average accuracy scores across different grade levels for leading foundation models</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/contexts.png" alt="contexts" width="90%"/>
-              <p>Accuracy scores of leading baselines across various visual contexts</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/results-figures/ablation.png" alt="geometric reasoning" width="90%"/>
-              <p>Average accuracy scores of LLM baselines under various visual inputs</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- @PAN TODO: bibtex -->
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-3 has-text-centered">BibTeX</h2>
