@@ -3,24 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Evaluating mathematical reasoning of foundation models in visual contexts">
-  <meta name="keywords" content="SciBench, Math Vista">
+        content="Evaluating scientific problems">
+  <meta name="keywords" content="SciBench">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> SciBench: Evaluating Math Reasoning in Visual Contexts</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
-  <!-- <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-/Users/panlu/Library/Mobile Documents/com~apple~CloudDocs/ImageMath/visual-mathqa-server/data_final/images
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
-  </script> -->
 
   <link rel="icon" href="./static/images/scibench.png">
 
@@ -49,7 +36,6 @@
   <script src="./data/results/output_folders.js" defer></script>
   <script src="./data/results/model_scores.js" defer></script>
 
-  <script src="./visualizer/data/data_public.js" defer></script>
 </head>
 <body>
 
@@ -69,7 +55,7 @@
       </span>
       </a> -->
       <!-- @PAN TODO: consider adding links? -->
-      <div class="navbar-item has-dropdown is-hoverable">
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
         </a>
@@ -99,7 +85,7 @@
             Inter-GPS
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
 
   </div>
@@ -244,7 +230,7 @@
             physics domains. Based on the dataset, we conduct an in-depth benchmarking study of representative open-source and proprietary LLMs with
             various prompting strategies. The results reveal
             that the current LLMs fall short of delivering satisfactory performance, with the best overall score
-            of merely <b>43.22%</b>. Furthermore, through a detailed user study, we categorize the errors made
+            of merely <b>48.96%</b>. Furthermore, through a detailed user study, we categorize the errors made
             by LLMs into ten problem-solving abilities. 
           </p>
           <p>  
@@ -269,12 +255,9 @@
       <div class="column is-full has-text-centered content">
         <h2 class="title is-3" id="leaderboard">Experimental Results Leaderboard on Textbook Dataset</h2>
         <div class="content">
-          <!-- <p class="mt-3">Accuracy scores on the <b>testmini</b> subset (1,000 examples) of <img src="static/images/scibench.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="scibench">SciBench</span>.
-          </p> -->
           <div id="textbook_leaderboard"></div>
-
-          <p style="text-align: left;">Chemistry: atkins, chemmc, quan, matter<br />Physics: fund, class, thermo<br/>Math: diff, stat, calc</p>
+          <p style="text-align: left;"> * The table shows the score under the Zero-Shot Setting.<br /> - The GPT models were evaluated on 03/15/2024, which is slightly different from the paper. <br /> - Additional results from other models will be included in the future. </p>
+          <!-- <p style="text-align: left;">Chemistry: atkins, chemmc, quan, matter<br />Physics: fund, class, thermo<br/>Math: diff, stat, calc</p> -->
 
 
       </div>
@@ -301,25 +284,21 @@
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
           <p>
-            <span class="scibench">SciBench</span> is a carefully curated dataset of college-level scientific problems, including 789 problems collected from widely-used textbooks in college-level Chemistry, Physics, and Mathematics courses. Distinct from existing benchmarks, all of the problems are
+            <span class="scibench">SciBench</span> is a carefully curated dataset of college-level scientific problems, collected from widely-used textbooks in college-level Chemistry, Physics, and Mathematics courses. Distinct from existing benchmarks, all of the problems are
             open-ended, free-response questions that demand multi-step
             reasoning abilities, the understanding of scientific concepts,
             the retrieval of domain-specific knowledge (e.g., equations
-            and theorems), and complex numeric computation capabilities (e.g., calculus or differential equations). Besides that,
-            our dataset includes a multimodal subset of 94 problems
-            that incorporate visual elements (such as graphs and figures)
-            as additional contexts, which enables of the evaluation of
-            multimodal LLMs. 
+            and theorems), and complex numeric computation capabilities (e.g., calculus or differential equations). 
           </p>
 
-          <p>To align our evaluation with realworld scenarios, we provide a separate, closed dataset that
+          <!-- <p>To align our evaluation with realworld scenarios, we provide a separate, closed dataset that
             encompasses 103 problems from seven sets of midterm and
             final exams from collegiate Computer Science and Math courses. To ensure the integrity of our evaluation, these
             datasets have been manually extracted from PDF documents
             and formatted into LaTeX documents, thereby minimizing
-            the risk of their leakage in LLM training data.</p>
+            the risk of their leakage in LLM training data.</p> -->
 
-          <div id="results-carousel" class="carousel results-carousel">
+          <!-- <div id="results-carousel" class="carousel results-carousel">
             <div class="box m-5">
               <div class="content has-text-centered">
                 <img src="static/images/SciBench_Benchmark_Comparison.png" alt="algebraic reasoning" width="100%"/>
@@ -332,7 +311,7 @@
                 <p> Summary of textbook dataset. We report the number of total problems, percentage with detailed solutions, and percentage with visual elements in columns four to six respectively.
               </div>
             </div>
-          </div>
+          </div> -->
 
           <p>
             To evaluate the capabilities and analyze the limitations of

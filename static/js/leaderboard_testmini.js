@@ -20,7 +20,7 @@ function generateTable() {
 	// Iterate through the outer sections
 	for (var section in data) {
 		// Add section title row
-		table += `<tr class="section-title"><td colspan="13">${section}</td></tr>`;
+		// table += `<tr class="section-title"><td colspan="13">${section}</td></tr>`;
 
 		// Iterate through the inner models within each section
 		for (var modelName in data[section]) {
