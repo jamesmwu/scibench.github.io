@@ -1,18 +1,18 @@
 score_table = {
 	'Zero-Shot Learning': {
-		// 'LLaMa-2-7B': {
-		// 	atkins: 0.0,
-		// 	chemmc: 0.0,
-		// 	quan: 0.0,
-		// 	matter: 0.0,
-		// 	fund: 1.37,
-		// 	class: 0.0,
-		// 	thermo: 0.0,
-		// 	diff: 2.0,
-		// 	stat: 5.33,
-		// 	calc: 0.0,
-		// 	Avg: 1.03
-		// },
+		'LLaMa-2-7B': {
+			atkins: 0.0,
+			chemmc: 0.0,
+			quan: 3.0,
+			matter: 0.0,
+			fund: 1.41,
+			class: 0.0,
+			thermo: 0.0,
+			diff: 0.0,
+			stat: 4.17,
+			calc: 2.38,
+			Avg: 1.03
+		},
 		// 'LLaMa-2-70B': {
 		// 	atkins: 1.87,
 		// 	chemmc: 2.56,
@@ -26,19 +26,19 @@ score_table = {
 		// 	calc: 0.0,
 		// 	Avg: 2.41
 		// },
-		// 'Mistral-7B': {
-		// 	atkins: 9.35,
-		// 	chemmc: 5.13,
-		// 	quan: 8.82,
-		// 	matter: 4.08,
-		// 	fund: 5.48,
-		// 	class: 2.13,
-		// 	thermo: 0.0,
-		// 	diff: 4.0,
-		// 	stat: 12.0,
-		// 	calc: 2.38,
-		// 	Avg: 6.23
-		// },
+		'Mistral-7B': {
+			atkins: 12.38,
+			chemmc: 10.53,
+			quan: 9.09,
+			matter: 4.26,
+			fund: 8.45,
+			class: 5.36,
+			thermo: 4.55,
+			diff: 6.0,
+			stat: 12.5,
+			calc: 2.38,
+			Avg: 8.10
+		},
 		// Claude2: {
 		// 	atkins: 15.0,
 		// 	chemmc: 12.83,
