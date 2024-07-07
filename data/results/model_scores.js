@@ -52,6 +52,19 @@ score_table = {
 			calc: 16.7,
 			Avg: 14.94
 		},
+		Vicuna: {
+			atkins: 0.0,
+			chemmc: 0.0,
+			quan: 0.0,
+			matter: 0.0,
+			fund: 0.0,
+			class: 0.0,
+			thermo: 0.0,
+			diff: 0.0,
+			stat: 0.0,
+			calc: 0.0,
+			Avg: 0.0
+		},
 		'GPT-3.5-Turbo': {
 			atkins: 4.67,
 			chemmc: 20.51,
